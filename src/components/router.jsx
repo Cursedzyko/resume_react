@@ -38,7 +38,7 @@ const routes = createBrowserRouter([
         ]
     }
 ], {
-    basename: '/resume_react'
+    basename: '/resume_react/'
 });
 
 export default routes;
