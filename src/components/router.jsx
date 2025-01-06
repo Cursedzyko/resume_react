@@ -1,44 +1,43 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from './App.jsx';
-import Overview from "./Overview.jsx";
+import Overview from "./Overiew.jsx";
 import Skills from "./Skills.jsx";
 import Education from "./Education.jsx";
 import Certificates from "./Certificates.jsx";
 import Projects from "./Projects.jsx";
 
+
 const routes = createBrowserRouter([
     {
-        path: "/",
+        path: "/resume_react/",
         element: <App />,
         children: [
             {
-                index: true,
+                index : true,
                 element: <Overview />
             },
             {
-                path: "overview",
+                path : "/resume_react/overview",
                 element: <Overview />
             },
             {
-                path: "skills",
+                path:"/resume_react/skills",
                 element: <Skills />
             },
             {
-                path: "education",
+                path:"/resume_react/education",
                 element: <Education />
             },
             {
-                path: "certificates",
+                path: "/resume_react/certificates",
                 element: <Certificates />
             },
             {
-                path: "projects",
+                path: "/resume_react/projects",
                 element: <Projects />
             },
         ]
     }
-], {
-    basename: '/resume_react/'
-});
+])
 
 export default routes;

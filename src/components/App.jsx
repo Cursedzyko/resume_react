@@ -28,7 +28,7 @@ function App() {
   };
 
   const handleResize = () => {
-    if (window.innerWidth <= 768) { 
+    if (window.innerWidth <= 900) { 
       if (isExplorerOpen) {
         setIsExplorerOpen(false);
       }
@@ -36,12 +36,13 @@ function App() {
   };
 
   useEffect(() => {
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isExplorerOpen]); 
+  }, []); 
 
 
   return (

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const File = ({name, onClick, className}) => {
     return (
         <Link 
-            to={`/${name.replace(".md", "")}`}
+            to={`/resume_react/${name.replace(".md", "")}`}
             onClick={() => onClick(name)} 
             className={`${className || ''} `}>
             <svg
